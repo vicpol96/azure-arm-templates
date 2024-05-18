@@ -116,7 +116,7 @@
     "publisher": "Canonical",
     "offer": "UbuntuServer",
     "sku": "20.04-LTS",
-    "version": "latest"  // O una versión específica, si es necesario
+    "version": "latest"
   }
 },
             "osDisk": {
