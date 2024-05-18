@@ -29,9 +29,10 @@
     }
   },
   "variables": {
-    "ubuntuOSVersion": "20_04-lts-gen2",
     "imagePublisher": "Canonical",
     "imageOffer": "UbuntuServer",
+    "imageSku": "20.04-LTS",
+    "imageVersion": "latest",
     "OSDiskName": "[concat(parameters('adminUsername'), 'OsDisk')]",
     "nicName": "[concat(parameters('adminUsername'), 'Nic')]",
     "addressPrefix": "10.0.0.0/16",
@@ -113,10 +114,10 @@
         },
         "storageProfile": {
           "imageReference": {
-            "publisher": "Canonical",
-            "offer": "UbuntuServer",
-            "sku": "20.04-LTS",
-            "version": "latest"
+            "publisher": "[variables('imagePublisher')]",
+            "offer": "[variables('imageOffer')]",
+            "sku": "[variables('imageSku')]",
+            "version": "[variables('imageVersion')]"
           },
           "osDisk": {
             "name": "[variables('OSDiskName')]",
