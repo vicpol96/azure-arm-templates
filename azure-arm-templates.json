@@ -114,10 +114,10 @@
         },
         "storageProfile": {
           "imageReference": {
-            "publisher": "[variables('imagePublisher')]",
-            "offer": "[variables('imageOffer')]",
-            "sku": "[variables('imageSku')]",
-            "version": "[variables('imageVersion')]"
+            "publisher": "Canonical",
+            "offer": "UbuntuServer",
+            "sku": "20_04-lts",
+            "version": "latest"
           },
           "osDisk": {
             "name": "[variables('OSDiskName')]",
