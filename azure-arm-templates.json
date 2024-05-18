@@ -112,12 +112,13 @@
             "vmSize": "[parameters('vmSize')]"
           },
           "storageProfile": {
-            "imageReference": {
-              "publisher": "[variables('imagePublisher')]",
-              "offer": "[variables('imageOffer')]",
-              "sku": "[variables('ubuntuOSVersion')]",
-              "version": "latest"
-            },
+  "imageReference": {
+    "publisher": "Canonical",
+    "offer": "UbuntuServer",
+    "sku": "20.04-LTS",
+    "version": "latest"  // O una versión específica, si es necesario
+  }
+},
             "osDisk": {
               "name": "[variables('OSDiskName')]",
               "caching": "ReadWrite",
